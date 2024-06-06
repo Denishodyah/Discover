@@ -1,0 +1,184 @@
+.discover {
+    min-height: 100vh;
+    position: relative;
+  
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    pointer-events: all ;
+   position: absolute ;
+   left: 940px ;
+   top: 50% ;
+   width: 400px ;
+   height: 7px ;
+   border: 2px solid rgb(115, 115, 115);
+    transform: rotate(90deg) translate(50%, 0%) ;
+    transform-origin: right top ;
+    @media (max-width: 1400px) { 
+        left:  750px;
+        
+    }
+    @media (max-width: 1200px) { 
+        left:  590px;
+        
+    }
+    @media (max-width: 1000px) { 
+        left:  360px;
+        
+    }
+    @media (max-width: 800px) { 
+        left:  200px;
+        width: 330px;
+        
+    }
+    @media (max-width: 550px) {
+        left: 130px;
+        width: 280px;
+        
+    }
+    @media (max-width: 420px){
+        transform:rotate(0deg) translate(60%, 0%);
+        top: 90%;
+        left: -120px;
+
+        
+    }
+}
+
+.swiper-scrollbar-drag {
+    border: 2px solid rgb(255, 255, 255) !important;
+    background: $color-white;
+}
+
+.discover__slide {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 219px 132px 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 800px) { 
+        padding: 219px 20px 160px;
+        
+    }
+    @media (max-width: 550px) {
+        padding: 81px 20px 40px;
+        
+    }
+    @media (max-width: 430px) {
+        padding: 60px 0px 0px;
+        
+    }
+}
+.discover__slide2  {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 219px 132px 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 800px) { 
+        padding: 219px 20px 160px;
+        
+    }
+    @media (max-width: 550px) {
+        padding: 81px 20px 40px;
+        
+    }
+    @media (max-width: 430px) {
+        padding: 60px 0px 0px;
+        
+    }
+} 
+.discover__slide3  {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 219px 132px 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 800px) { 
+        padding: 219px 20px 160px;
+        
+    }
+    @media (max-width: 550px) {
+        padding: 81px 20px 40px;
+        
+    }
+    @media (max-width: 430px) {
+        padding: 60px 0px 0px;
+        
+    }
+} 
+.discover__slide4  {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 219px 132px 160px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 800px) { 
+        padding: 219px 20px 160px;
+        
+    }
+    @media (max-width: 550px) {
+        padding: 81px 20px 40px;
+        
+    }
+    @media (max-width: 430px) {
+        padding: 60px 0px 0px;
+        
+    }
+} 
+.discover__slide5  {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 219px 132px 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 800px) { 
+        padding: 219px 20px 160px;
+        
+    }
+    @media (max-width: 550px) {
+        padding: 81px 20px 40px;
+        
+    }
+    @media (max-width: 430px) {
+        padding: 60px 0px 0px;
+        
+    }
+} 
+.slide__content {
+    max-width: 376px;
+    text-align: center;
+
+}
+.slide__title {
+font-size: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem); // min 20px max 40px
+font-weight: 700;
+line-height: 1.2;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 30px
+}
+.slide__subtitle {
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 56px;
+}
+.slide__link {
+display: inline-flex;
+color: $color-dark;
+font-weight: 400;
+line-height: 1.2;
+text-align: center;
+text-transform: uppercase;
+background: rgb(227, 191, 0);
+border-radius: 0px;
+&:hover {
+    background: $bg-button-accent;
+    color: $color-dark;
+}
+}
+
+

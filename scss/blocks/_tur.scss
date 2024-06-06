@@ -1,0 +1,92 @@
+.tur {
+    padding: 155px 0 100px;
+    @media (max-width: 700px) {
+        padding-top: 50px;
+        
+    }
+}
+.tur__item:nth-child(even) .tur-card {
+    flex-direction: row-reverse;
+}
+.tur-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+}
+
+.tur-card__body {
+    position: relative;
+    margin-bottom: auto;
+    
+}
+.tur-card__name {
+    color: $bg-button-accent;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    left: 75px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -70px;
+        top: 8px;
+        width: 60px;
+        height: 2px;
+        background: $bg-button-accent;
+    }
+}
+.tur-card__title {
+    color: $color-dark;
+font-size: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);//min 10px- max 20px
+margin-bottom: 15px
+}
+.tur-card__title--capitalize {
+    text-transform: capitalize;
+}
+.tur-card__description {
+    color: $color-text;
+text-transform: capitalize;
+}
+.tur-card__description--text {
+    text-transform: none;
+    @media (max-width: 700px) {
+        margin-bottom: 30px;
+        
+    }
+
+}
+.tur-card__img {
+    position: relative;
+    left: 130px;
+    margin-bottom: auto;
+    @media (max-width: 700px) {
+        margin-bottom: 40px;
+        
+    }
+}
+.tur-card__img2 {
+    position: relative;
+    right: 105px;
+}
+.tur-card__button {
+    display: inline-flex ;
+    margin: 20px 0 114px;
+    border-radius: 0;
+    &:hover {
+        background: $bg-link;
+        color: $color-white;
+    }
+}
+
+
+
+
+

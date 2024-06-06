@@ -1,0 +1,36 @@
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    padding-top: 238px;
+    text-align: -webkit-center;
+}
+
+.hero__title {
+font-family: $font-title;
+font-size: clamp(1.25rem, 0.786rem + 1.9vw, 2.5rem); // min 20px - max 40px
+font-weight: 700;
+text-transform: uppercase;
+max-width: 639px;
+margin-bottom: 15px
+}
+.hero__subtitle {
+letter-spacing: .05em;
+margin-bottom: 15px;
+max-width: 520px;
+}
+.hero__button {
+    margin-bottom: 34px;
+    transition: all 0.3s;
+    white-space: nowrap;
+    &:hover {
+background: $color-white;
+color: $color-dark;
+    }
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}

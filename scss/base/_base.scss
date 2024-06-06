@@ -1,0 +1,67 @@
+@media (hover:hover) {
+    button:hover {
+        background-color: $bg-button-accent;
+    }
+}
+@media (hover: none) {
+    button:active {
+background-color: $bg-button-accent;
+    }
+}
+
+body{
+font-family: $font-main;//monserat-regular
+color: $color-white;
+font-size: clamp(0.5rem, 0.314rem + 0.76vw, 1rem);// min-8px max-16px
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 0.1em;
+background: $color-white;
+}
+.main {
+    overflow: hidden;
+}
+
+a,button,input,textarea,svg * {
+    transition-duration: 0.3s;
+}
+a {
+    white-space: nowrap;
+text-decoration: none;
+color: inherit;
+
+&:hover {
+color: $bg-link;
+}
+&:focus {
+    opacity: 0.5;
+}
+}
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+.btn {
+font-size: clamp(0.5rem, 0.314rem + 0.76vw, 1rem);
+letter-spacing: .05em;
+text-transform: uppercase;
+padding: 9px 28px;
+border-radius: 100px;
+background: $bg-button-accent;
+border: none;
+color: $color-white;
+}
